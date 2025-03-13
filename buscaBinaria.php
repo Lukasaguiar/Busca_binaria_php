@@ -16,12 +16,12 @@
 	
 	
 	
-	//quero valor 10;
+	//Valor que irei procurar nas listas
 	$valorQueQuero=33;
 	
 	print"vamos procurar o valor $valorQueQuero \n";
 	
-	//metodo sequencial
+	//metodo sequencial/ busca simples 
 	print"\n\nMetodo sequencial \n";
 	foreach ($lista as $indice => $valorAtual){
 	
@@ -39,7 +39,7 @@
 	
 	
 	//busca binaria
-	 $contadorcontraErro=0;
+ 
 	  
 	  //tamanho total da lista atual
 	     $tamanhoLista=($inicioLista+$fimLista)+1;
@@ -49,8 +49,7 @@
 	 
 	   while($inicioLista <= $fimLista){
 	     print"\n\n";
-	     $contadorcontraErro++;
-	     
+ 	     
 	     //varaveis iniciais
 	     print"\n inicio $inicioLista";
 	     print"\n fim $fimLista";
@@ -90,14 +89,7 @@
 	       break;
 	     }
 	     
-	     
-	     if($contadorcontraErro > 13){
-	       print"\n\n entrou erro. passou de 10 tentativas";
-	       break;
-	     }
-	     
-	     
-	     
+
 	   }
 	
 	
